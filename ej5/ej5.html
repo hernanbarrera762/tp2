@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Área de Terreno</title>
+</head>
+<body>
+    <div>
+        <h1>Cálculo de Área de Terreno</h1>
+        <label for="A">Medida A (m):</label>
+        <input type="number" id="A" step="any">
+
+        <label for="B">Medida B (m):</label>
+        <input type="number" id="B" step="any">
+
+        <label for="C">Medida C (m):</label>
+        <input type="number" id="C" step="any">
+
+        <button onclick="calcularArea()">Calcular Área</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calcularArea() {
+            const A = parseFloat(document.getElementById('A').value);
+            const B = parseFloat(document.getElementById('B').value);
+            const C = parseFloat(document.getElementById('C').value);
+
+            if (isNaN(A) || isNaN(B) || isNaN(C)) {
+                alert('Por favor, ingrese valores válidos.');
+                return;
+            }
+
+            const areaTriangulo = 0.5 * (A - C) * B;
+            const areaRectangulo = C * B;
+            const areaTotal = areaTriangulo + areaRectangulo;
+
+            document.getElementById('result').innerText = `El área total del terreno es: ${areaTotal.toFixed(2)} metros cuadrados.`;
+        }
+    </script>
+</body>
+</html>
