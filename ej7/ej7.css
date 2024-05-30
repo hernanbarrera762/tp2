@@ -1,0 +1,22 @@
+.user-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.completed {
+    color: green;
+    text-decoration: line-through;
+}
+
+.pending {
+    color: red;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.tasks {
+    margin-top: 10px;
+}

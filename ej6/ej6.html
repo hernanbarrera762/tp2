@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 6</title>
+    <title>ej6</title>
+    <link rel="stylesheet" href="ej6.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Formulario Personalizado</h1>
+        <label for="">Nombre</label>
+        <input type="text" name="" id="Nombre" maxlength="50"> <br>
+        <label for="">Apellido</label>
+        <input type="text" name="" id="Apellido" maxlength="50"><br>
+        <label for="">Altura (cm)</label>
+        <input type="number" name="" id="Altura" min="0" max="230">
+        <br>
+        <label for="">Edad</label>
+        <input type="number" name="" id="Edad" min="0" max="230">
+        <br>
+        <label for="">Correo Electrónico</label>
+        <input type="email" name="" id="Email"><br>
+        <button onclick="validarFormulario()">Validar Formulario</button>
+        <p id="Resultado"></p>
+    </div>
+    <script src="ej6.js"></script>
 </body>
 </html>
