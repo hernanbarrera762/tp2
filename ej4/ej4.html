@@ -6,21 +6,11 @@
 <title>calculadora</title>
 <link rel="stylesheet" href="ej4.css">
 </head>
-<body>
-<label>Introduzca su peso</label>
-<input type="number" id="peso">
-<label>Introduzca su estatura</label>
-<input type="number" id="altura">
-<button onclick="calcularIMC()">Calcular IMC</button>
-<script>
-function calcularIMC(){
-const peso = document.getElementById("peso").value
-const altura = document.getElementById("altura").value
-
-let imc = peso / altura**2
-alert(imc)
-
-}
-</script>
-</body>
+    <body>
+        <label>Introduzca su peso</label>
+        <input type="number" id="peso">
+        <label>Introduzca su estatura</label>
+        <input type="number" id="altura">
+        <button onclick="calcularIMC()">Calcular IMC</button>
+    </body>
 </html>
