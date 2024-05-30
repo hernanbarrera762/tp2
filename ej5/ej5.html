@@ -3,42 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ej5.css">
 <title>Cálculo de Área de Terreno</title>
 </head>
-<body>
-<div>
-<h1>Cálculo de Área de Terreno</h1>
-<label for="A">Medida A (m):</label>
-<input type="number" id="A" step="any">
+    <body>
+        <div class="contenedor">
+            <h1>Cálculo de Área de Terreno</h1>
+            <label for="A">Medida A (m):</label>
 
-<label for="B">Medida B (m):</label>
-<input type="number" id="B" step="any">
+            <input style="background-color: aquamarine; type="number" id="A" step="any"><br>
 
-<label for="C">Medida C (m):</label>
-<input type="number" id="C" step="any">
+            <label for="B">Medida B (m):</label>
+            <input style="background-color: aquamarine; type="number" id="B" step="any"><br>
 
-<button onclick="calcularArea()">Calcular Área</button>
+            <label for="C">Medida C (m):</labe>
+            <input style="background-color: aquamarine;" type="number" id="C" step="any"><br><br>
 
-<div id="result"></div>
-</div>
+            <button onclick="calAr()">Calcular Área</button><br>
+            <h4>uwu</h4>
 
-<script>
-function calcularArea() {
-const A = parseFloat(document.getElementById('A').value);
-const B = parseFloat(document.getElementById('B').value);
-const C = parseFloat(document.getElementById('C').value);
+            <div id="result"></div>
+        </div>
 
-if (isNaN(A) || isNaN(B) || isNaN(C)) {
-alert('Por favor, ingrese valores válidos.');
-return;
-}
+        <script>
+            function calAr() {
+            const A = parseFloat(document.getElementById('A').value);
+            const B = parseFloat(document.getElementById('B').value);
+            const C = parseFloat(document.getElementById('C').value);
 
-const areaTriangulo = 0.5 * (A - C) * B;
-const areaRectangulo = C * B;
-const areaTotal = areaTriangulo + areaRectangulo;
+                if (isNaN(A) || isNaN(B) || isNaN(C)) {
+                alert('ingrese valores válidos.');
+            return;
+            }
 
-document.getElementById('result').innerText = `El área total del terreno es: ${areaTotal.toFixed(2)} metros cuadrados.`;
-}
-</script>
-</body>
+            const areaTriangulo = 0.5 * (A - C) * B;
+            const areaRectangulo = C * B;
+            const areaTotal = areaTriangulo + areaRectangulo;
+
+            document.getElementById('result').innerText = `El área total del terreno es: ${areaTotal.toFixed(2)} metros cuadrados.`;
+            }
+        </script>
+    </body>
 </html>

@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+}
+.contenedor{
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(143, 141, 141);
+    border-radius: 13px;
+    margin: auto;
+    position: static;
+    margin-top: 15%;
+}
+h1{
+    color: burlywood;
+}
+label{
+    color: burlywood;
+}
+button{
+    background-color: lightseagreen;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4{
+    color: rgb(143, 141, 141);
+}
